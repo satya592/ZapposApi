@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.Scanner;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,9 +33,25 @@ public class Zappos {
 
 		pInfo.printPageInfo();
 
-		for (int i = 0; i < 70; i++) {
-			System.out.println(pInfo.URLCreation(50));
-		}
+		// for (int i = 0; i < 70; i++) {
+		// System.out.println(pInfo.URLCreation(50));
+		// }
 
+		Scanner keyboard = new Scanner(System.in);
+		int numberOfItems;
+		double targetPrice;
+		System.out
+				.println("Please enter the total number of items you would like to buy: ");
+		numberOfItems = keyboard.nextInt();
+		System.out
+				.println("Please enter the total price you would like to pay: ");
+		targetPrice = keyboard.nextDouble();
+
+		// Dynamic programming goes here
+
+		int range = 50;
+
+		SelectedProducts selProducts = new SelectedProducts(
+				pInfo.URLCreation(range));
 	}
 }
