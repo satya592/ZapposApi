@@ -22,12 +22,12 @@ public class Configuration {
 	//
 	// // Parameters for Task-Set Generations
 	// public static int TasksInTestTaskSet = 10;
-	// public static int MinPeriodInTestTaskSet = 5;
-	// public static int MaxPeriodInTestTaskSet = 10;
-	// public static int MaxSuspensions = 3;
-	// public static double LowerBoundOfSuspension = 1;
-	// public static double UpperBoundOfSuspension = 2;
-	// public static double TaskSetUtilization = 1.2;
+	public static int numberOfItems;
+	public static double userPrice;
+	public static final int N50 = 50;
+	public static final int N100 = 100;
+	public static final int N200 = 200;
+	public static final int N201 = 201;
 	public static String APIKey = "&key=52ddafbe3ee659bad97fcce7c53592916a6bfd73";
 
 }
